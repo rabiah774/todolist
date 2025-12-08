@@ -23,11 +23,20 @@ public class todolist {
                         System.out.println((i + 1) + ". " + todoList.get(i));
                     }
                     break;
-              
-
-                     }
+                    case 3:
+                    System.out.println("Enter the task number to remove:");
+                    int tasknumber = scanner.nextInt();
+                    if (tasknumber > 0 && tasknumber <= todoList.size()) {
+                        todoList.remove(tasknumber - 1);
+                        System.out.println("Task removed.");
+                    } else {
+                        System.out.println("Invalid task number.");
+                   }
+                    break;
+                
         }
     }
+}
 }
 
 
