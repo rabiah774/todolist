@@ -33,6 +33,19 @@ public class todolist {
                         System.out.println("Invalid task number.");
                    }
                     break;
+                    case 4: 
+                    System.out.println("Enter the task to be mark as completed:");
+                      int completedtasknumber = scanner.nextInt();
+                      scanner.nextLine();
+                    if (completedtasknumber > 0 && completedtasknumber <= todoList.size()) {
+                      String completedtask =  todoList.remove(completedtasknumber - 1);
+                        System.out.println("✓ '" + completedtask + "' marked as completed and removed from the list.\n");
+        } 
+                else {
+                    System.out.println("✗ Invalid task number.\n");
+                   }
+                 break;
+                      
                 
         }
     }
