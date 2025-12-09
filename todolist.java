@@ -45,6 +45,13 @@ public class todolist {
                     System.out.println("✗ Invalid task number.\n");
                    }
                  break;
+                case 5:
+                    System.out.println("Exiting the To-Do List. Goodbye!");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+
                       
                 
         }
