@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8cbfe1;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    height: 70vh;
+}
+p{
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+button{
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(41, 41, 219);
+    border: none;
+     border-radius: 50px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(18, 18, 112, 0.8);
+    transition: all 0.3s ease-in-out;
+   
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    gap: 70px;
+}
+.card{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(42, 41, 41, 0.1);
+    height: 350px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    
+}
+
+.image img{
+    width: 85%;
+    border-radius: 10px;
+}
+
+/* ===================== */
+/* DEFAULT (DESKTOP FIRST) */
+/* ===================== */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================== */
+/* LARGE DESKTOP (1400px+) */
+/* ===================== */
+@media (min-width: 1400px) {
+  /* big screens */
+}
+
+/* ===================== */
+/* LAPTOP (1024px - 1280px) */
+/* ===================== */
+@media (max-width: 1280px) {
+  /* laptop adjustments */
+}
+
+/* ===================== */
+/* TABLET (768px - 1024px) */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  .feature {
+    padding: 40px;
+  }
+
+  .card {
+    gap: 20px;
+  }
+
+}
+/*Tablet (768px - 1024px) */
+@media (min-width:601px) and (max-width: 1024px) {
+  .feature {
+    padding: 30px;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;   /* maintain two-column layout */;
+    gap: 15px;
+  }
+}
+
+/* ===================== */
+/* MOBILE (<=600px) */
+/* ===================== */
+@media (max-width: 600px) {
+
+  .feature {
+    padding: 20px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;   /* stack layout */
+    width: 85%;
+    height: 85%;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 22px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 85%;
+    display: block;
+  }
+
+}
+
+/* ===================== */
+/* SMALL MOBILE (<=480px) */
+/* ===================== */
+@media (max-width: 480px) {
+
+  .feature {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
+
+}
