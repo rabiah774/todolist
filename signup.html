@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(48, 48, 245);
+            margin: 0;
+            padding:0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color:whitesmoke;
+            border-radius: 8px;
+            padding: 30px;
+            width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            margin-bottom:15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+        }
+        button {
+            background-color: blue;
+            color: aliceblue;
+            border-radius:8px;
+            padding: 10px;
+        }
+        button:hover{
+            background-color: darkblue;
+        }
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            p {
+                text-align: center;
+            }
+            /* Base styles for mobile */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+.button {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+.google-btn:hover {
+  background-color: #bdbaba;
+}
+.google-btn span {
+  color: black;
+  margin-left: 25px;
+}
+
+
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+    padding: 30px;
+  }
+}
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  /* Mobile styles */
+  .card {
+  width:220px;
+    
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  /* Tablet styles */
+}
+
+/* Laptops */
+@media screen and (max-width: 1024px) {
+  /* Laptop styles */
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  /* Desktop styles */
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens between 768px and 1024px */
+}
+@media screen and (orientation: landscape) {
+  /* Styles for landscape orientation */
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Sign Up</h1>
+        <form>
+          
+           <input type="email" name="email" id="" placeholder="email">
+           <input type="password" name="password" id="" placeholder="password">
+        <button  onclick="window.location.href='login.html'" type="submit">Sign Up</button>
+          <div class="google-btn">
+             <span>Continue with Google</span>
+            <img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-internet-icon-vector-png-image_9183287.png" alt="">
+
+          </div>
+           <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+
+        
+
+    </div>
+    
+</body>
+</html>
