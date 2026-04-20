@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+         <nav id="tab" class="sidebar">
+   <ul>
+    <li class="active"><a class="nav-link" data-tab="main-page">Home</a></li>
+    <li><a class="nav-link" data-tab="add-expense">Add Expense</a></li>
+    <li ><a class="nav-link" data-tab="history" >History</a></li>
+    <li ><a class="nav-link" data-tab="settings">Settings</a></li>
+   </ul>
+    </nav>
+    <div class="main">
+    <section id="inbox" class="tab active">
+     <div class>
+        <h3 id="title">Inbox</h3>
+        <div class ="add-task">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button type="submit" id="add-task-btn">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+      </section>   
+    
+    </div>
+         
+
+       
+
+      
+    
+</body>
+</html>
