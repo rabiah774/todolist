@@ -87,3 +87,11 @@ body {
     gap: 20px;
     align-items: center;
 }
+ul#task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: medium;
+    color: black;
+}
